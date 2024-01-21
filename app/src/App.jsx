@@ -2,7 +2,7 @@ import { useState } from "react"
 
 function App() {
 
-  const techStack = ["Python", "JavaScript", "React", "FastAPI", "Tailwind CSS", "Golang", "Web Scraping", "Django", "Git", "Github", "Docker", "C++", "MySQL", "PostgreSQL", "MongoDB", "Algorithms", "Data Structures"]
+  const techStack = ["Python", "JavaScript", "React", "FastAPI", "Tailwind CSS", "Golang", "Linux", "Bash", "Web Scraping", "Django", "Git", "Github", "Docker", "C++", "MySQL", "PostgreSQL", "MongoDB", "Algorithms", "Data Structures"]
   const [showMenu, setShowMenu] = useState(false)
 
   return (
