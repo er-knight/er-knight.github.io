@@ -1,9 +1,26 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function App() {
 
   const techStack = ["Python", "JavaScript", "React", "FastAPI", "Tailwind CSS", "Golang", "Linux", "Bash", "Web Scraping", "Django", "Git", "Github", "Docker", "C++", "MySQL", "PostgreSQL", "MongoDB", "Algorithms", "Data Structures"]
+  const subHeadings = ["Python Developer", "JavaScript Developer"]
+  
   const [showMenu, setShowMenu] = useState(false)
+  const [subHeading, setSubHeading] = useState("")
+
+  function subHeadingWriter(i, j) {
+    setSubHeading(subHeadings[i].slice(0, j + 1))
+    if (j == (subHeadings[i].length - 1)) {
+      setTimeout(() => subHeadingWriter((i + 1) % subHeadings.length, 0), 200)
+    } else {
+      setTimeout(() => subHeadingWriter(i, j + 1), 200)
+    }
+  } 
+
+  useEffect(() => {
+    subHeadingWriter(0, 0)
+  }, [])
+  
 
   return (
     <div className="flex flex-col font-['Work_Sans'] p-2 h-screen">
@@ -26,7 +43,7 @@ function App() {
       <div className="grow overflow-scroll">
         <div className="h-full flex flex-col items-center justify-center gap-6 md:gap-8 border-b">
           <div className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter text-center">Ajay Dandge</div>
-          <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl px-2 md:px-3 md:py-1 tracking-tighter border">Software Developer</div>
+          <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl px-2 md:px-3 md:py-1 tracking-tighter border">{subHeading}</div>
         </div>
         <div className="h-full p-4 border-b flex items-center justify-center">
           <div className="grid grid-cols-2 min-[425px]:grid-cols-3 gap-2 sm:grid-cols-4 lg:grid-cols-5">
