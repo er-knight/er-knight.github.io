@@ -7,14 +7,14 @@ function App() {
 
   const projects = [
     {
-      title: "Contests",
-      description: "Check upcoming and ongoing contests from AtCoder, CodeChef, Codeforces, GeeksforGeeks and LeetCode",
+      title: "Contests Web App",
+      description: "A Progressive Web App which shows upcoming and ongoing contests from AtCoder, CodeChef, Codeforces, GeeksforGeeks and LeetCode",
       techstack: ["React", "Tailwind CSS", "Python", "Web Scraping"],
       url: "https://er-knight.github.io/contests",
       github: "https://github.com/er-knight/contests"
     },
     {
-      title: "ChatGPT Updated",
+      title: "Web Search for ChatGPT",
       description: "Browser extension which updates ChatGPT on latest events using Google, based on RAG (Retrieval Augmented Generation)",
       techstack: ["JavaScript", "SerpAPI"],
       github: "https://github.com/er-knight/chatgpt-web-access"
@@ -80,7 +80,11 @@ function App() {
         </div>
         <div id="about" className="h-full p-4 md:p-16 lg:p-32 xl:p-64 border-b flex flex-col gap-4 justify-center">
           <p className="md:text-xl tracking-tight">
-            I am a software developer, who has worked with Python, JavaScript, React, Django, PostgreSQL. I like to learn new technologies, specially porgramming langauges because every programming langauge has something new to offer and confuse you about. I like to solve Algorithms and Data Structures related questions. I am familiar with Docker, Linux, Bash, C++, Java, Git, GitHub, Tailwind CSS and Mongo DB.
+            I am a Fullstack Developer, with passion for learning new things.
+            <br/><span className="font-medium">Polyglot Programmer:</span> Python, JavaScript, C++, Java, Golang, SQL (and always hungry to learn more!)
+            <br/><span className="font-medium">Algorithm Ninja:</span> I love tackling challenging data structures and algorithmic problems.
+            <br/><span className="font-medium">DevOps Do-It-All:</span> Docker, Linux, Bash - my toolkit keeps deployments smooth.
+            <br/><span className="font-medium">Tech-Savvy:</span> React, Django, TailwindCSS, MongoDB, Git, GitHub - you name it, I've likely wrestled with it.
           </p>
           <div className="flex gap-2">
             <a className="border px-2 py-0 underline decoration-1 decoration-gray-200 hover:border-gray-950 hover:decoration-gray-950 tracking-tighter md:text-lg" href="https://www.linkedin.com/in/ajaydandge" target="_blank">LinkedIn</a>
